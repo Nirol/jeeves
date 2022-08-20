@@ -57,5 +57,10 @@ async def get_all_users():
         return {"users": users_list}
 
 
+@app.get("/")
+async def hello_world():
+    return "hello world!"
+
+
 if __name__ == "__main__":
     app.run()
